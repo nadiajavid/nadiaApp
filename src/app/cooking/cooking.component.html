@@ -1,0 +1,14 @@
+<h1>my pets </h1>
+
+
+
+<div *ngFor="let pet of pets">
+    <li>my parrot's name is {{pet.name | uppercase}};</li>
+    <ol>my parrot's color is {{pet.color}};</ol>
+
+</div>
+<input type="text" [(ngModel)]="temp" />
+<button type="button" (click)="displayTemMessage()">Click For Tem Check!</button>
+<br>
+<input type="text" [(ngModel)]="hello" />
+<button type="button" (click)="displaySmileMessage()">Click For smile Check!</button>
